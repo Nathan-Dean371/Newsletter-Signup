@@ -14,21 +14,22 @@
 <body>
 
 
-  <div class="form-container">
+  <div class="form-container" id="form-container">
+    <img class="mobile-signup-img" src="assets/images/illustration-sign-up-mobile.svg">
     <div class="text-container">
       <h1>Stay Updated!</h1>
-        <p>Join 60'000+ product managers receiving monthly updates on:</p>
-        <p><img class="success-icon" src="assets/images/icon-list.svg"> Product discovery and building what matters</p>
-        <p><img class="success-icon" src="assets/images/icon-list.svg"> Measuring to ensure updates are a success</p>
-        <p><img class="success-icon" src="assets/images/icon-list.svg"> And much more!</p>
+      <p>Join 60'000+ product managers receiving monthly updates on:</p>
+      <img class="success-icon" src="assets/images/icon-list.svg"> <p>Product discovery and building what matters</p>
+      <img class="success-icon" src="assets/images/icon-list.svg"><p> Measuring to ensure updates are a success</p>
+      <img class="success-icon" src="assets/images/icon-list.svg"><p> And much more!</p>
+      <br>
+      <br>
+      <form id="myForm" onsubmit="submit_test(); return false">
+        <h4>Email Address</h4><h5 class="email-error-message" id="email-error-message">Valid email required</h5>
+        <input type="email" id="email-input" name="email" class="email-input mtb-5" autocomplete="off" required placeholder="email@company.com">
         <br>
-        <br>
-        <form id="myForm">
-          <h4>Email Address</h4><h5 class="email-error-message" id="email-error-message">Valid email required</h5>
-          <input type="email" name="email" class="email-input mtb-5" autocomplete="off" required>
-          <br>
-          <button class="email-submit mtb-5" type="submit">Subscribe to monthly newsletter</button>
-        </form>
+        <button class="email-submit mtb-5" id="email-submit" type="submit">Subscribe to monthly newsletter</button>
+      </form>
     </div>
 
     <div>
@@ -38,9 +39,22 @@
 
   </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Nathan Dean</a>.
+  <div id="success-container">
+    <div class="success-text-container">
+      <img class="success-icon-large" src="assets/images/icon-list.svg">
+      <h1>Thanks for subscribing!</h1>
+      
+      <p id="success-text">A confirmation email has been sent to email. Please open it and click the button inside to confirm your subscription.</p>
+      <div class="center-contents">
+        <button class="dismiss-button">Dismiss message</button>
+      </div>
+      
+    </div>
+
+    
   </div>
+
+
+ 
 </body>
 </html>
