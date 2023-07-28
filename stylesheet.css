@@ -21,6 +21,23 @@
     {
         display: block !important;
     }
+
+    #success-container
+    {
+        width: 100dvw !important; 
+        height: 100dvh !important;
+        border-radius: 0px !important;
+    }
+
+    .success-text-container
+    {
+        margin-top: 40% !important;
+    }
+
+    .dismiss-container
+    {
+        margin-top: 60% !important;
+    }
  }
 
 
@@ -64,6 +81,13 @@ body
     width: 100%;
     padding: 15px;
     border-radius: 5px;
+    border: 0px;
+}
+
+.dismiss-button:hover
+{
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: -1px 16px 30px -9px rgba(255,98,87,0.52);
 }
 
 .mobile-signup-img

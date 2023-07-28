@@ -16,14 +16,6 @@ document.querySelector( "form" ).addEventListener( "invalid", function( event )
             document.getElementById("email-error-message").style.display = "block"; 
         }, true );
        
-function submit_test()
-{
-    form_container.style.display = "none";
-    success_container.style.display = "flex"
-
-}
-
-
 document.querySelector( "form" ).addEventListener( "input", function( event ) 
         {
             if(validEmailRegEx.test(email_input.value))
@@ -38,3 +30,16 @@ document.querySelector( "form" ).addEventListener( "input", function( event )
            
 
         })
+
+function submit_test()
+{
+            form_container.style.display = "none";
+            success_container.style.display = "flex";
+}
+
+function dismiss()
+{
+    success_container.style.display = "none";
+}
+
+
