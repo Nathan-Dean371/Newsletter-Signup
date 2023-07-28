@@ -23,8 +23,7 @@
 
     #success-container
     {
-        width: 100dvw !important; 
-        height: 100dvh !important;
+        min-height: 100dvh !important;
         border-radius: 0px !important;
     }
 
