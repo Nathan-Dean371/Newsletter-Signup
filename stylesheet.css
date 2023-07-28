@@ -10,11 +10,10 @@
 
     .form-container
     {
-        width: 100dvw !important; 
         border-radius: 0px !important;
         flex-direction: column;
         margin: 0px !important;
-        
+        min-height: 100vh !important;
     }
 
     .mobile-signup-img
