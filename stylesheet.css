@@ -13,6 +13,8 @@
         width: 100dvw !important; 
         border-radius: 0px !important;
         flex-direction: column;
+        margin: 0px !important;
+        height: 100dvh !important;
     }
 
     .mobile-signup-img
@@ -51,6 +53,7 @@ body
     justify-content: center;
     box-sizing: border-box;
     margin: 0px;
+    min-height: 100vh;
     
 }
 
@@ -102,7 +105,7 @@ body
     background-color: white;
     flex-direction: column;
     border-radius: 15px;
-
+    max-width: 30rem;
     
 }
 
